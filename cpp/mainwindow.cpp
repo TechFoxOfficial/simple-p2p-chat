@@ -49,6 +49,5 @@ void MainWindow::on_send_btn_clicked()
 
 void MainWindow::send_massage()
 {
-    QString msg_line = ui->massge_line->text();
-    conn->outconn->send_massage_to_host(msg_line);
+
 }

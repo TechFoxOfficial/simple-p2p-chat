@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/mainpath">
+        <file>Main New Logo.png</file>
+    </qresource>
+</RCC>

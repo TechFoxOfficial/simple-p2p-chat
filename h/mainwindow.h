@@ -49,6 +49,7 @@ private slots:
 
 signals:
 
+
 private: // methods
     void send_massage();
 

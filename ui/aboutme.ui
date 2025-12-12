@@ -23,38 +23,53 @@
     </rect>
    </property>
    <property name="orientation">
-    <enum>Qt::Orientation::Horizontal</enum>
+    <enum>Qt::Horizontal</enum>
    </property>
    <property name="standardButtons">
-    <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="plainTextEdit">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
+  <widget class="QLabel" name="mainlogo">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>411</width>
-     <height>291</height>
+     <width>401</width>
+     <height>261</height>
     </rect>
    </property>
-   <property name="plainText">
-    <string>this program with love for everyone.
-
-if you want to use this app, don't forget donation. :)
-
-don't forget to subscribe my youtube channel and github. 
-
-MyYoutube: www.youtube.com/@furryfoxyofficial
-
-MyGithub: www.github.com/furryfoxyofficial</string>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../mainresources.qrc">:/mainpath/Main New Logo.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="website">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>265</y>
+     <width>411</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>techfoxofficial.github.io</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../mainresources.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>buttonBox</sender>

@@ -17,6 +17,7 @@ SOURCES += \
     incommingconnection.cpp \
     main.cpp \
     mainwindow.cpp \
+    msg_sender.cpp \
     outgoingconnection.cpp
 
 HEADERS += \
@@ -24,9 +25,11 @@ HEADERS += \
     h/connect_to_computer.h \
     h/incommingconnection.h \
     h/mainwindow.h \
-    h/outgoingconnection.h
+    h/outgoingconnection.h \
+    h/msg_sender.h
 
 FORMS += \
+    ui/msg_sender.ui \
     ui/aboutme.ui \
     ui/connect_to_computer.ui \
     ui/mainwindow.ui
@@ -35,3 +38,9 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    ../../../Videos/Youtube Template/Main New Logo.png
+
+RESOURCES += \
+    mainresources.qrc
